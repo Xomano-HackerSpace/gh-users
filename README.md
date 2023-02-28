@@ -18,7 +18,10 @@ também será possível salvar os usuários pesquisados em um banco de dados loc
 
 ## 📝 Layout
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FpBEVfHTMGSs6DMy56sUnhx%2FGH-Users%3Fnode-id%3D0%253A1%26t%3DuQ1LNoTQqJq2Bohq-1" allowfullscreen></iframe>
+<img src="./assets/layout.png" alt="Layout da aplicação"
+style="border-radius: 10px; margin: 10px; max-width: 800px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">
+
+![layout](https://img.shields.io/badge/figma%20-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white&link=https://www.figma.com/file/pBEVfHTMGSs6DMy56sUnhx/GH-Users?node-id=0%3A1&t=uQ1LNoTQqJq2Bohq-1)
 
 # 📝 Autor
 
