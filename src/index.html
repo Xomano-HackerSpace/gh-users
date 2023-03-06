@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./utilitary.css" />
+  <script src="https://unpkg.com/phosphor-icons"></script>
+  <title>Github Profiles</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <div class="content">
+      <p>FIND ANY GITHUB PROFILES BY USERNAME</p>
+      <h1><span>Github</span> Profiles</h1>
+    </div>
+  </header>
+
+  <!-- Search -->
+
+  <form class="search">
+    <div class="search-field">
+      <label for="username" class="sr-only">Search by username</label>
+      <i class="ph-magnifying-glass-bold"></i>
+      <input type="text" id="username" name="username" placeholder="Search by username" />
+    </div>
+    <button id="searchButton" class="btn">Search</button>
+  </form>
+
+  <!-- Main -->
+  <main>
+    <div class="content">
+      <section class="top">
+        <h2>Results found</h2>
+        <i class="ph-rows-bold"></i>
+      </section>
+
+      <section id="cards" class="cards">
+
+        <div class="card">
+          <img src="../assets/gh.png" alt="gh-user">
+          <div class="content">
+            <h3>Paulo-JRaitz</h3>
+            <div class="github">
+              <button class="btn">
+                <i class="ph-floppy-disk-fill"></i>
+                <p>
+                  Save Profile
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="../assets/gh.png" alt="gh-user">
+          <div class="content">
+            <h3>Paulo-JRaitz</h3>
+            <div class="github">
+              <button class="btn">
+                <i class="ph-floppy-disk-fill"></i>
+                <p>
+                  Save Profile
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="../assets/gh.png" alt="gh-user">
+          <div class="content">
+            <h3>Paulo-JRaitz</h3>
+            <div class="github">
+              <button class="btn">
+                <i class="ph-floppy-disk-fill"></i>
+                <p>
+
+                  Save Profile
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="card">
+          <img src="../assets/gh.png" alt="gh-user">
+          <div class="content">
+            <h3>Paulo-JRaitz</h3>
+            <div class="github">
+              <button class="btn">
+                <i class="ph-floppy-disk-fill"></i>
+                <p>
+                  Save Profile
+                </p>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="top">
+        <h2>Saved results</h2>
+        <i class="ph-database-fill"></i>
+      </section>
+
+      <section id="savedCards" class="cards">
+        <!-- Cards Salvos -->
+      </section>
+
+      <div class="empty">
+        <img src="../assets/empty.svg" alt="empty">
+      </div>
+
+    </div>
+    </div>
+  </main>
+</body>
+
+</html>

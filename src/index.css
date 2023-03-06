@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --webkit-font-smoothing: antialiased;
+  --moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%; /* 1rem = 10px */
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  font-size: 1.6rem; /* 16px */
+}
+
+.content {
+  margin: 0 0.8rem;
+}
+
+header {
+  min-height: 30rem; /* altura mínima do header (30rem = 300px) */
+  background-image: url(../assets/bg.jpg);
+  background-size: cover; /* faz com que a imagem ocupe todo o espaço do elemento */
+  position: relative;
+  overflow: hidden; /* faz com que o conteúdo do header não ultrapasse o tamanho do elemento */
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+
+header::after {
+  content: ''; /* conteúdo vazio */
+  width: 30rem; /* largura do elemento (30rem = 300px) */
+  height: 30rem; /* altura do elemento (30rem = 300px) */
+  background-image: url(../assets/gh.png);
+  background-size: cover;
+  background-position: center;
+  transform: scaleX(-1);
+  position: absolute;
+  left: 0;
+  bottom: -0.8rem;
+}
+
+header .content {
+  width: fit-content; /* faz com que o elemento tenha o tamanho do conteúdo */
+  position: relative;
+  margin: auto; /* centraliza o elemento */
+  text-align: center; /* alinha o conteúdo do header ao centro */
+  z-index: 1; /* posiciona o elemento na frente do header */
+  color: #ffff; /* cor do texto */
+  padding: 0 1.6rem; /* padding (1.6rem = 16px) */
+}
+
+header p {
+  font-weight: 500;
+  text-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.8);
+  line-height: 160%;
+}
+
+header h1 {
+  font-size: 5rem;
+  line-height: 120%;
+  text-shadow: 0.1rem 0.1rem 0.4rem rgba(0, 0, 0, 0.8); /* sombra no texto  (0.1rem = 1px) (0.4rem = 4px) */
+}
+
+header h1 span {
+  color: #c99eff;
+  background-image: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.5),
+    transparent,
+    rgba(255, 255, 255, 0.5)
+  );
+  border-radius: 4rem; /* borda arredondada (4rem = 40px) */
+  padding: 0.4rem 0.8rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.5);
+}
+
+form {
+  margin: auto;
+  max-width: 62rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3rem;
+  transition: 0.5s linear;
+  padding: 1rem;
+  transform: translateY(-50%);
+}
+
+form:hover {
+  box-shadow: 0 10px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+.search-field {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 0.1rem solid rgba(255, 255, 255, 0.38);
+  border-radius: 4rem;
+  margin: 0.8rem;
+  padding: 0.8rem;
+  overflow: hidden;
+}
+
+.search-field i {
+  color: #761ee6;
+  font-size: 2.4rem;
+}
+
+input,
+button {
+  font-family: 'Roboto', sans-serif;
+  all: unset;
+}
+
+input {
+  margin: 0;
+  height: 2rem;
+  text-align: left;
+  font-weigth: 500;
+  font-size: 1.6rem;
+  width: 40rem;
+  color: #262626;
+}
+
+input::placeholder {
+  color: #761ee6;
+}
+
+form button {
+  padding: 1.2rem 2rem;
+  margin: 0.8rem;
+}
+
+button:hover {
+  background: #4a0e96;
+}
+
+main > .content {
+  margin: auto;
+  max-width: 80rem;
+  padding: 0 4rem;
+}
+
+section.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  color: #303030;
+}
+
+section.top i {
+  color: #761ee6;
+}
+
+/* cards */
+section.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.card {
+  border-radius: 0.8rem;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.34);
+  transition: 0.5s linear;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+
+.card img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.card .content {
+  display: grid;
+  gap: 0.8rem;
+  padding: 1.6rem;
+  color: #303030;
+}
+.card .github {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.card .github i {
+  font-size: 2.4rem;
+}
+
+.card .github button {
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.8rem;
+  gap: 0.8rem;
+}
+
+.card h3 {
+  color: #761ee6;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.empty img {
+  max-width: 20rem;
+}
+
+@media (max-width: 60rem) {
+  section.cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  form {
+    width: 100%;
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 32rem) {
+  section.cards {
+    grid-template-columns: 1fr;
+  }
+  form {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 20rem) {
+  .btn p {
+    display: none;
+  }
+}

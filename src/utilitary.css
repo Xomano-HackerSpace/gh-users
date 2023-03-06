@@ -1,0 +1,25 @@
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #ffff;
+  background: #761ee6;
+  font-weight: 500;
+  transition: 0.5s linear;
+}
