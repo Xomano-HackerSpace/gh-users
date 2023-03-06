@@ -11,8 +11,8 @@ também será possível salvar os usuários pesquisados em um banco de dados loc
 
 ## 📚 Tecnologias
 
-- [ ] HTML
-- [ ] CSS
+- [x] HTML
+- [x] CSS
 - [ ] JavaScript
 - [ ] Axios
 
