@@ -245,3 +245,7 @@ section.cards {
     display: none;
   }
 }
+
+a {
+  all: unset;
+}

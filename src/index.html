@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./index.css" />
   <link rel="stylesheet" href="./utilitary.css" />
   <script src="https://unpkg.com/phosphor-icons"></script>
+  <script src="./index.js" defer></script>
   <title>Github Profiles</title>
 </head>
 
@@ -44,69 +45,10 @@
 
       <section id="cards" class="cards">
 
-        <div class="card">
-          <img src="../assets/gh.png" alt="gh-user">
-          <div class="content">
-            <h3>Paulo-JRaitz</h3>
-            <div class="github">
-              <button class="btn">
-                <i class="ph-floppy-disk-fill"></i>
-                <p>
-                  Save Profile
-                </p>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="../assets/gh.png" alt="gh-user">
-          <div class="content">
-            <h3>Paulo-JRaitz</h3>
-            <div class="github">
-              <button class="btn">
-                <i class="ph-floppy-disk-fill"></i>
-                <p>
-                  Save Profile
-                </p>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="../assets/gh.png" alt="gh-user">
-          <div class="content">
-            <h3>Paulo-JRaitz</h3>
-            <div class="github">
-              <button class="btn">
-                <i class="ph-floppy-disk-fill"></i>
-                <p>
-
-                  Save Profile
-                </p>
-              </button>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="card">
-          <img src="../assets/gh.png" alt="gh-user">
-          <div class="content">
-            <h3>Paulo-JRaitz</h3>
-            <div class="github">
-              <button class="btn">
-                <i class="ph-floppy-disk-fill"></i>
-                <p>
-                  Save Profile
-                </p>
-              </button>
-            </div>
-          </div>
-        </div>
-
       </section>
+      <div class="empty" id="emptyUsers">
+        <img src="../assets/empty.svg" alt="empty">
+      </div>
 
       <section class="top">
         <h2>Saved results</h2>
@@ -117,13 +59,13 @@
         <!-- Cards Salvos -->
       </section>
 
-      <div class="empty">
+      <div class="empty" id="emptySavedUsers" >
         <img src="../assets/empty.svg" alt="empty">
       </div>
+
 
     </div>
     </div>
   </main>
 </body>
-
 </html>
