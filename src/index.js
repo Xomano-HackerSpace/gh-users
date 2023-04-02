@@ -102,7 +102,11 @@ function saveUser(login, avatar_url, html_url) {
     savedUsers = JSON.parse(savedUsersJson);
 
     if (savedUsers.some((user) => user.login === login)) {
-      alert('User already saved');
+      Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'User already saved!',
+      })
       return;
     }
   }
