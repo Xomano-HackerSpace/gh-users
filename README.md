@@ -13,8 +13,8 @@ também será possível salvar os usuários pesquisados em um banco de dados loc
 
 - [x] HTML
 - [x] CSS
-- [ ] JavaScript
-- [ ] Axios
+- [x] JavaScript
+- [x] Axios
 
 ## 📝 Layout
 
