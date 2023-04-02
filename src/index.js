@@ -21,7 +21,7 @@ function searchUsers() {
     cards.innerHTML = '';
     let cardItems = ``;
     if (response.data.items.length !== 0) {
-      emptyUsers.style.visibility = "hidden";
+      emptyUsers.style.display = "none";
       response.data.items.forEach((user) => {
         cardItems += cardUser(user)
       });
@@ -29,7 +29,7 @@ function searchUsers() {
       cards.innerHTML = cardItems;
     } else {
       cards.innerHTML = ''
-      emptyUsers.style.visibility = "visible";
+      emptyUsers.style.display = "flex";
     }
     page = getNextPage(response.headers.link);
 
@@ -133,11 +133,11 @@ function getSavedUsers() {
   })
 
   if (cardItems) {
-    emptySavedUsers.style.visibility = "hidden"
+    emptySavedUsers.style.display = "none";
     savedCards.innerHTML = cardItems;
   }
   else {
-    emptySavedUsers.style.visibility = "visible"
+    emptySavedUsers.style.display = "flex";
   }
 }
 
