@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="./index.css" />
   <link rel="stylesheet" href="./utilitary.css" />
   <script src="https://unpkg.com/phosphor-icons"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script src="./index.js" defer></script>
   <title>Github Profiles</title>
 </head>
@@ -30,7 +31,7 @@
     <div class="search-field">
       <label for="username" class="sr-only">Search by username</label>
       <i class="ph-magnifying-glass-bold"></i>
-      <input type="text" id="username" name="username" placeholder="Search by username" />
+      <input type="text" id="username" name="username" placeholder="Search by username" onchange="searchUsers()"/>
     </div>
     <button id="searchButton" class="btn">Search</button>
   </form>
@@ -44,7 +45,6 @@
       </section>
 
       <section id="cards" class="cards">
-
       </section>
       <div class="empty" id="emptyUsers">
         <img src="../assets/empty.svg" alt="empty">
@@ -62,6 +62,8 @@
       <div class="empty" id="emptySavedUsers" >
         <img src="../assets/empty.svg" alt="empty">
       </div>
+
+
 
 
     </div>
